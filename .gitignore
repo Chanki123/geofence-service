@@ -1,5 +1,12 @@
-venv/
+# Python
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# virtual env
+venv/
 .venv/
+
+# VS Code
+.vscode/
