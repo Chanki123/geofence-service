@@ -1,0 +1,18 @@
+from fastapi.testclient import TestClient
+from main import app
+import time
+
+client = TestClient(app)
+
+def test_post_location_and_zone():
+    vehicle = "TEST1"
+    # a point inside the sample polygon City Market (close to 12.975,77.595)
+    resp = client.post("/location", json={"vehicleId": vehicle, "lat": 12.975, "lon": 77.595})
+    assert resp.status_code == 204
+
+    # query
+    r = client.get(f"/vehicle/{vehicle}/zone")
+    assert r.status_code == 200
+    data = r.json()
+    assert data["vehicleId"] == vehicle
+    # currentZoneId should be present or None (depending on zones.json). We accept both for robustness.

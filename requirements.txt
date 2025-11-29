@@ -1,0 +1,5 @@
+fastapi==0.100.0
+uvicorn[standard]==0.22.0
+shapely==2.1.2
+pydantic==1.10.9
+pytest==7.4.0

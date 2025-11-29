@@ -1,0 +1,31 @@
+[
+  {
+    "id": "zone_airport",
+    "name": "Airport Zone",
+    "type": "circle",
+    "center": [12.9718915, 77.6411545],
+    "radius_m": 3000
+  },
+  {
+    "id": "zone_market",
+    "name": "City Market",
+    "type": "polygon",
+    "polygon": [
+      [12.971, 77.59],
+      [12.980, 77.59],
+      [12.980, 77.60],
+      [12.971, 77.60]
+    ]
+  },
+  {
+    "id": "zone_station",
+    "name": "Station Area",
+    "type": "polygon",
+    "polygon": [
+      [12.965, 77.60],
+      [12.970, 77.60],
+      [12.970, 77.605],
+      [12.965, 77.605]
+    ]
+  }
+]
